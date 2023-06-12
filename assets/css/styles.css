@@ -1,5 +1,5 @@
 .container {
-  width: 1138px;
+  max-width: 1138px;
   margin: 0 auto;
 }
 body {
@@ -207,6 +207,15 @@ h2 {
   right: 10px;
   top: 10px;
 }
+.carrou1 i {
+  padding: 10px 10px;
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
 .carroussel::-webkit-scrollbar {
   display: none;
 }
@@ -235,4 +244,104 @@ footer img {
 }
 .grocarou {
   margin-bottom: 20px;
+}
+
+.carres .exclu {
+  display: none;
+}
+.burger {
+  display: none;
+}
+.cart {
+  display: none;
+}
+
+@media (min-width: 1024px) and (max-width: 1184px) {
+  .container {
+    width: 95%;
+  }
+  footer {
+    background-color: green;
+  }
+  .carres .exclu {
+    display: block;
+  }
+  .carres {
+    flex-wrap: wrap;
+  }
+  .carres div {
+    flex-basis: 21%;
+  }
+  .carrou {
+    width: 100%;
+  }
+
+  .burger {
+    display: none;
+  }
+  .cart {
+    display: none;
+  }
+  .grocarou {
+    max-width: 100%;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  .carrou {
+    width: 100%;
+  }
+  .burger {
+    display: none;
+  }
+  .cart {
+    display: none;
+  }
+  .grocarou {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+  .carrou {
+    width: 100%;
+  }
+  .carrou1 {
+    width: 100%;
+  }
+  .carrou2 {
+    display: none;
+  }
+  .tete {
+    display: none;
+  }
+  .burger {
+    display: flex;
+    align-items: center;
+  }
+  .cart {
+    display: flex;
+    align-items: center;
+  }
+  .grocarou {
+    display: flex;
+    flex-direction: column;
+  }
+  .grocarou {
+    max-width: 100%;
+  }
+  .carroussel img {
+    height: 500px;
+    width: 500px;
+  }
+  .carres {
+    overflow: scroll;
+  }
+  .carres::-webkit-scrollbar {
+    display: none;
+  }
 }
