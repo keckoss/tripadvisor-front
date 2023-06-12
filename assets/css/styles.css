@@ -260,9 +260,6 @@ footer img {
   .container {
     width: 95%;
   }
-  footer {
-    background-color: green;
-  }
   .carres .exclu {
     display: block;
   }
@@ -302,6 +299,12 @@ footer img {
   .grocarou {
     max-width: 100%;
   }
+  .carres div {
+    width: 100%;
+  }
+  .carres div i {
+    margin-left: 6px;
+  }
 }
 @media (max-width: 768px) {
   .container {
@@ -340,8 +343,26 @@ footer img {
   }
   .carres {
     overflow: scroll;
+    padding-bottom: 5px;
   }
   .carres::-webkit-scrollbar {
     display: none;
+  }
+  .description {
+    flex-direction: column;
+    max-width: 100%;
+    align-items: center;
+  }
+  .descleft {
+    width: 100%;
+  }
+  .descright {
+    width: 80%;
+  }
+  .carres div {
+    width: 100%;
+  }
+  .carres div i {
+    margin-left: 6px;
   }
 }
