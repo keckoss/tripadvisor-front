@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
       console.log(data);
 
       const response = await axios.post(
-        "https://tripadvisoreacteur.netlify.app",
+        "https://tripadvisoreacteur.netlify.app/form",
         data
       );
       console.log(response);
