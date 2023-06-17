@@ -1,9 +1,9 @@
-const PORT = process.env.PORT;
 const express = require("express");
 const cors = require("cors");
 const formData = require("form-data");
 const Mailgun = require("mailgun.js");
 require("dotenv").config();
+const PORT = process.env.PORT;
 const app = express();
 app.use(express.json());
 
