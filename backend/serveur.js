@@ -3,6 +3,7 @@ const cors = require("cors");
 const formData = require("form-data");
 const Mailgun = require("mailgun.js");
 require("dotenv").config();
+const PORT = process.env.PORT;
 
 const app = express();
 app.use(express.json());
@@ -51,6 +52,6 @@ app.post("/form", async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log("Server is up and running!"); // Message affiché lorsque le serveur est démarré
 });
