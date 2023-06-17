@@ -17,8 +17,8 @@ const client = mailgun.client({
   key: process.env.APIKEY /* VOTRE CLÉ API */,
 });
 
-app.all("/", (req, res) => {
-  res.send("server is up");
+app.get("/", (req, res) => {
+  res.json({ message: "Server is up and running!" }); // Réponse JSON avec un message
 });
 
 app.post("/form", async (req, res) => {
@@ -52,5 +52,5 @@ app.post("/form", async (req, res) => {
 });
 
 app.listen(3000, () => {
-  console.log("server is listening");
+  console.log("Server is up and running!"); // Message affiché lorsque le serveur est démarré
 });
