@@ -35,7 +35,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
       console.log(data);
 
-      const response = await axios.post("http://localhost:3000/form", data);
+      const response = await axios.post(
+        "https://tripadvisoreacteur.netlify.app/form",
+        data
+      );
       console.log(response);
     });
 });
