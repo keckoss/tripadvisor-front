@@ -6,7 +6,13 @@ require("dotenv").config();
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+
+// Configuration du middleware cors avec les options appropriées
+app.use(
+  cors({
+    origin: "https://tripadvisoreacteur.netlify.app", // Remplacez par votre origine autorisée
+  })
+);
 
 /* MAILGUN CONFIGURATION */
 const mailgun = new Mailgun(formData);
