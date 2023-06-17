@@ -17,7 +17,7 @@ const client = mailgun.client({
   key: process.env.APIKEY /* VOTRE CLÉ API */,
 });
 
-app.get("/", (req, res) => {
+app.all("/", (req, res) => {
   res.send("server is up");
 });
 
